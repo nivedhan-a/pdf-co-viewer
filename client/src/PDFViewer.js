@@ -13,7 +13,7 @@ const PDFViewer = () => {
 
   useEffect(() => {
     // Connect to the Socket.IO server
-    const newSocket = io('http://localhost:3001'); // Replace with your server URL
+    const newSocket = io('https://pdf-co-viewer-backend.vercel.app');
     setSocket(newSocket);
 
     // Listen for the pageChanged event from the server
